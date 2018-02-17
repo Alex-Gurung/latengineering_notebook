@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage{float}
+    \usepackage{tgadventor}
+    \usepackage{longtable}
+    \usepackage{datetime}
+    \newdateformat{monthyeardate}{ \monthname[\THEMONTH] \THEYEAR }
+    
+    \usepackage{graphicx}
+    
+    \graphicspath{{src/images/}}
+    \usepackage[letterpaper, portrait, margin=1in]{geometry}
+    \usepackage{fancyhdr}
+    \usepackage{xcolor}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \usepackage{titlesec}
+    \rhead{\colorbox{orange!100}{\textbf{12787} \hspace{4.5in } \textbf{~~TEAM NAME~~}}}
+    
+    \rfoot{Page \thepage}
+    
+    \begin{document}
+    {\fontfamily{qag}\selectfont
+    
+    \include{src/cover/cover_page}
+    
+    \include{src/team/team}
+    
+    \include{src/mentors/mentors}
+    
+    \include{src/outreach/outreach}
+    
+    \include{src/business/business}
+    
+    \include{src/engineering/engineering}
+    
+    \include{src/programming/programming}
+    
+    \include{src/tools/tools}
+    
+    
+    \end{document}
